@@ -6,7 +6,7 @@ public class NumberGuessingGame {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Instructions");
+		System.out.println("Instructions are given here");
 		System.out.println("1. If you want to exit game in between you have to enter -1");
 		System.out.println();
 		
