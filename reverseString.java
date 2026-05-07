@@ -1,19 +1,19 @@
-package practise;
-import java.util.*;
-public class reverseString {
-	Scanner sc = new Scanner(System.in);
+package string;
+
+import java.util.Arrays;
+
+public class ReverseString {
+
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String str = "JAI GORA";
-		reverse(str);
-		sc.close();		
-	}
-        
-	public static void reverse(String a) {
-		String b = "";
-		for(int i=a.length()-1; i>=0; i--) {
-			b=b+a.charAt(i);
+		
+		String str = "Jai Gora";
+		String revStr = "";
+		char arr[] = str.toCharArray();
+		for(int i=str.length()-1; i>=0; i--) {
+			revStr = revStr + arr[i];
 		}
-		System.out.println(b);
+		System.out.print(revStr);
+
 	}
+
 }

@@ -5,6 +5,6 @@ public class Main{
         int firstNumber = sc.nextInt(); 
         int secondNumber = sc.nextInt();
         int result = firstNumber + secondNumber;
-        System.out.print(result);
+                System.out.print("result: " + result);
     }
 }
