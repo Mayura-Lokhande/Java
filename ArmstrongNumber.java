@@ -15,10 +15,10 @@ public class ArmstrongNumber{
 			temp=temp/10;
 		}
 		if(res==n){
-			System.out.println("ARMSTRONG NUMBER");
+			System.out.println("IT IS A ARMSTRONG NUMBER");
 		}
 		else{
-			System.out.println("NOT A ARMSTRONG NUMBER");
+			System.out.println("IT IS NOT A ARMSTRONG NUMBER");
 		}
 	}
 }
