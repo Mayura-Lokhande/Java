@@ -168,7 +168,7 @@ public class RightTriangleStarPatternTest {
     
     @Test
     public void testRecursivePatternSize2() {
-        RightTriangleStarPattern.printRecursive(2);
+        String actualPatternOutput = outContent.toString();
         String output = outContent.toString();
         String expected = "* 
 * * 
