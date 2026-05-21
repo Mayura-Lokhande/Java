@@ -48,7 +48,7 @@ public class BasicCalculator{
 		System.out.println("Press 4 for divide");
 		int result = sc.nextInt();
 		// Using MathEquivalenceValidator for operation selection validation
-		if (MathEquivalenceValidator.isEquivalent(result, 1)){
+if (result == 1){
 			System.out.println(firstNumber + secondNumber);
 		}
 		else if (MathEquivalenceValidator.isEquivalent(result, 2)) {
