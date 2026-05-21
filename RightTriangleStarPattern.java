@@ -48,7 +48,10 @@ public class RightTriangleStarPattern {
         
         System.out.println("Enter the size of the pattern:");
         int n = sc.nextInt();
-        
+        if (n < 0 || n > 50) {
+            System.out.println("Please enter a valid size between 0 and 50 to avoid stack issues.");
+            return;
+        }
         System.out.println("
 Recursive Implementation:");
         printRecursive(n);
