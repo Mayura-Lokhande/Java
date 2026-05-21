@@ -1,3 +1,4 @@
+//method two for anagram only
 import java.util.Scanner;
 public class Anagram_method_2{
     public static void main(String[] args){
