@@ -1,37 +1,65 @@
 import java.util.Scanner;
-public class selection_sort{
-    public static void main(String[] args){
-        Scanner sc= new Scanner(System.in);
-        
-        System.out.println("enter the size of array");
-        int n = sc.nextInt();
-        int a[] = new int[n];
-        
-        System.out.println("enter the array");
-        for(int i=0; i<n; i++){
-            a[i]=sc.nextInt();
+
+public class SelectionSortAlgorithm {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Accept array size from user
+        System.out.println("Enter the size of the array:");
+        int arraySize = scanner.nextInt();
+
+        // Initialize array
+        int[] numbers = new int[arraySize];
+
+        // Input array elements
+        System.out.println("Enter array elements:");
+
+        for (int index = 0; index < arraySize; index++) {
+            numbers[index] = scanner.nextInt();
         }
-        
-        for(int i=0; i<n-1; i++){
-            
-            int minimun = i;
-            
-            for(int j=i; j<n; j++){
-                
-                if(a[j]<a[minimun]){
-                    minimun = j;
+
+        /*
+         * Selection Sort Logic
+         * Time Complexity  : O(n²)
+         * Space Complexity : O(1)
+         *
+         * Working Principle:
+         * - Find the minimum element from the unsorted portion.
+         * - Swap it with the current index element.
+         * - Repeat until array becomes sorted.
+         */
+
+        for (int currentIndex = 0; currentIndex < arraySize - 1; currentIndex++) {
+
+            // Assume current index contains minimum value
+            int minimumElementIndex = currentIndex;
+
+            // Traverse unsorted sub-array
+            for (int comparisonIndex = currentIndex + 1;
+                 comparisonIndex < arraySize;
+                 comparisonIndex++) {
+
+                // Update minimum index if smaller element is found
+                if (numbers[comparisonIndex] < numbers[minimumElementIndex]) {
+                    minimumElementIndex = comparisonIndex;
                 }
             }
-            
-            int temp = a[i];
-            a[i] = a[minimun];
-            a[minimun] = temp;
+
+            // Swap current element with minimum element
+            int temporaryValue = numbers[currentIndex];
+            numbers[currentIndex] = numbers[minimumElementIndex];
+            numbers[minimumElementIndex] = temporaryValue;
         }
-        
-        System.out.println("Sorted array");
-        for(int e:a){
-            System.out.print(e+" ");
+
+        // Display sorted array
+        System.out.println("Sorted Array in Ascending Order:");
+
+        for (int element : numbers) {
+            System.out.print(element + " ");
         }
-        
+
+        scanner.close();
     }
 }
