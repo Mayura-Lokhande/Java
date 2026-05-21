@@ -8,7 +8,7 @@ public class selection_sort {
 
         // Accept array size from user
         System.out.println("Enter the size of the array:");
-        int arraySize = scanner.nextInt();
+        int arraySize = Math.max(0, scanner.nextInt());
 
         // Initialize array
         int[] numbers = new int[arraySize];
