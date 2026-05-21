@@ -77,7 +77,7 @@ public class RightTriangleStarPatternTest {
     
     @Test
     public void testIterativePatternSize5() {
-        RightTriangleStarPattern.printIterative(5);
+        String actualPatternOutput = outContent.toString();
         String output = outContent.toString();
         String expected = "* 
 * * 
