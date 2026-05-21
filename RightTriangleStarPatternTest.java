@@ -17,8 +17,9 @@ public class RightTriangleStarPatternTest {
         System.setOut(new PrintStream(outContent));
     }
     
-    private void restoreSystemOut() {
-        System.setOut(originalOut);
+    @org.junit.jupiter.api.AfterEach
+    public void tearDown() {
+        restoreSystemOut();
     }
     
     @Test
