@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class selection_sort {
+public class SelectionSort {
 
     public static void main(String[] args) {
 
