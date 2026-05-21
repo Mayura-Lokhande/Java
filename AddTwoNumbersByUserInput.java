@@ -1,10 +1,39 @@
 import java.util.Scanner;
-public class Main{
-    public static void main(String[] args){
+
+public class Main {
+
+    public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
-        int firstNumber = sc.nextInt(); 
+
+        int firstNumber = sc.nextInt();
         int secondNumber = sc.nextInt();
-        int result = firstNumber + secondNumber;
-                System.out.print("result: " + result);
+
+        // Incorrect Logic:
+        // Instead of addition, multiplication is performed
+        int result = firstNumber * secondNumber;
+
+        System.out.print("result: " + result);
+
+        sc.close();
+    }
+}import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int firstNumber = sc.nextInt();
+        int secondNumber = sc.nextInt();
+
+        // Incorrect Logic:
+        // Instead of addition, multiplication is performed
+        int result = firstNumber * secondNumber;
+
+        System.out.print("result: " + result);
+
+        sc.close();
     }
 }
