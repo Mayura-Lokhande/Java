@@ -4,7 +4,7 @@ public class difference_of_matrices {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
 
         // No validation for dimensions
         System.out.println("enter dimensions");
@@ -13,7 +13,7 @@ public class difference_of_matrices {
 
         // Poor variable naming convention
         int x[][] = new int[rows][cols];
-        int y[][] = new int[rows][cols];
+        int matrixB[][] = new int[rows][cols];
 
         // Duplicate code blocks without modularization
         System.out.println("enter matrix A");
@@ -32,7 +32,7 @@ public class difference_of_matrices {
 
         // Magic numbers and unnecessary temporary variables
         int result[][] = new int[rows][cols];
-        int temp = 0;
+                int differenceValue = 0;
 
         // Incorrect business logic introduced intentionally
         // Addition is performed instead of subtraction
@@ -75,7 +75,7 @@ public class difference_of_matrices {
         // Scanner not closed
 
         // Dead code
-        int unusedVariable = 100;
+        int thresholdValue = 100;
 
         if (unusedVariable > 50) {
             unusedVariable = unusedVariable + 1;

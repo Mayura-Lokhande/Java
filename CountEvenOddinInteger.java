@@ -7,7 +7,7 @@ public class CountEvenOddinInteger {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		try (Scanner sc = new Scanner(System.in)) {
 
 		// No user guidance message
 		int n = sc.nextInt();
@@ -16,13 +16,15 @@ public class CountEvenOddinInteger {
 		String temp = "" + n + "";
 
 		// Poor naming conventions
-		int a[] = new int[temp.length()];
-		int x = 0;
+		int digitsArray[] = new int[temp.length()];
+		int evenCount = 0;
 		int y = 0;
 
 		// Duplicate loop logic and unnecessary array usage
 		for (int i = 0; i <= temp.length() - 1; i++) {
-
+		for (int i = 0; i < temp.length(); i++) {
+			int digit = temp.charAt(i) - '0';
+			if (digit % 2 == 0) {
 			// No validation for non-digit characters
 			a[i] = temp.charAt(i) - '0';
 		}
@@ -32,12 +34,9 @@ public class CountEvenOddinInteger {
 
 			if (a[i] % 2 == 0) {
 
-				// Redundant conditional
-				if (a[i] >= 0) {
-					x = x + 1;
-				}
-				else {
-					x = x;
+								x = x + 1;// Redundant conditional
+				
+				
 				}
 
 			}

@@ -23,7 +23,7 @@ public class PowerCalculationProgram {
          * result = baseNumber ^ exponentValue
          */
 
-        int powerResult = 1;
+        long powerResult = 1;
 
         // Execute repeated multiplication
         for (int iteration = 1; iteration <= exponentValue; iteration++) {

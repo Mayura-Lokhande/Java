@@ -19,7 +19,7 @@ public class RightTriangleStarPatternTest {
     
     @org.junit.jupiter.api.AfterEach
     public void tearDown() {
-        restoreSystemOut();
+                System.setOut(originalOut);
     }
     
     @Test
@@ -77,8 +77,8 @@ public class RightTriangleStarPatternTest {
     
     @Test
     public void testIterativePatternSize5() {
-        String actualPatternOutput = outContent.toString();
-        String output = outContent.toString();
+                String output = outContent.toString();
+       
         String expected = "* 
 * * 
 * * * 
@@ -168,11 +168,13 @@ public class RightTriangleStarPatternTest {
     
     @Test
     public void testRecursivePatternSize2() {
-        String actualPatternOutput = outContent.toString();
+                RightTriangleStarPattern.printRecursive(2);
         String output = outContent.toString();
         String expected = "* 
+    
 * * 
 ";
+    
         assertEquals(expected, output, "Recursive pattern for size 2 should have 2 rows");
     }
     

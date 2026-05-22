@@ -8,9 +8,10 @@ public class ReverseString {
 		
 		String str = "Jai Gora";
 		String revStr = "";
-		char arr[] = str.toCharArray();
+		char[] characters = str.toCharArray();
+		StringBuilder revStringBuilder = new StringBuilder();
 		for(int i=str.length()-1; i>=0; i--) {
-			revStr = revStr + arr[i];
+			revStringBuilder.append(arr[i]);
 		}
 		System.out.print(revStr);
 

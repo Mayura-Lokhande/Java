@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 class MathEquivalenceValidator {
     // Tolerance for floating-point comparison
-    private static final double EPSILON = 1e-9;
+    private static final double COMPARISON_TOLERANCE = 1e-9;
     
     /**
      * Evaluates mathematical equivalence between two numeric values.
@@ -51,7 +51,7 @@ public class BasicCalculator{
 if (result == 1){
 			System.out.println(firstNumber + secondNumber);
 		}
-		else if (MathEquivalenceValidator.isEquivalent(result, 2)) {
+		else if (result == 2) {
 			System.out.println(firstNumber - secondNumber);
 		}
 		else if (MathEquivalenceValidator.isEquivalent(result, 3)) {

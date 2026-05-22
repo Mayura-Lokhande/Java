@@ -198,7 +198,13 @@ Do you want to play another round? (yes/no): ");
 			
 			System.out.println("
 Attempt " + (attemptCount + 1) + "/" + maxAttempts + ": Enter your number: ");
-			userNumber = sc.nextInt();
+			if (sc.hasNextInt()) {
+				userNumber = sc.nextInt();
+			} else {
+				System.out.println("Invalid input! Please enter a number.");
+				sc.next(); // Clear invalid input
+				continue;
+			}
 			
 			long endTime = System.currentTimeMillis();
 			long responseTime = endTime - startTime;
