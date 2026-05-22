@@ -41,7 +41,7 @@ public class difference_of_matrices {
             // Deep nested structure increasing complexity
             for (int j = 0; j < cols; j++) {
 
-                temp = x[i][j] + y[i][j];
+                temp = x[i][j] - y[i][j];
 
                 // Redundant assignment
                 result[i][j] = temp;

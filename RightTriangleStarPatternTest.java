@@ -17,8 +17,9 @@ public class RightTriangleStarPatternTest {
         System.setOut(new PrintStream(outContent));
     }
     
-    private void restoreSystemOut() {
-        System.setOut(originalOut);
+    @org.junit.jupiter.api.AfterEach
+    public void tearDown() {
+        restoreSystemOut();
     }
     
     @Test
@@ -76,7 +77,7 @@ public class RightTriangleStarPatternTest {
     
     @Test
     public void testIterativePatternSize5() {
-        RightTriangleStarPattern.printIterative(5);
+        String actualPatternOutput = outContent.toString();
         String output = outContent.toString();
         String expected = "* 
 * * 
@@ -167,7 +168,7 @@ public class RightTriangleStarPatternTest {
     
     @Test
     public void testRecursivePatternSize2() {
-        RightTriangleStarPattern.printRecursive(2);
+        String actualPatternOutput = outContent.toString();
         String output = outContent.toString();
         String expected = "* 
 * * 

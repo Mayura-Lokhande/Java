@@ -11,7 +11,7 @@ public class Main {
 
         // Incorrect Logic:
         // Instead of addition, multiplication is performed
-        int result = firstNumber * secondNumber;
+        int result = firstNumber + secondNumber;
 
         System.out.print("result: " + result);
 
