@@ -27,10 +27,10 @@ public class Anagram {
 			}
 		}
 		if(isAnagram) {
-			System.out.println("Anagram");
+			System.out.println("It is Anagram");
 		}
 		else {
-			System.out.println("Not Anagram");
+			System.out.println("It is Not Anagram");
 		}
 		sc.close();
 	}
