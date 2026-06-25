@@ -7,6 +7,7 @@ public class countVowels {
 		String str = sc.nextLine();
 		count(str);
 		sc.close();
+		sc.closed();
 		
 	}
 	public static void count(String a) {
