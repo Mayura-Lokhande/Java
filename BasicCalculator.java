@@ -41,7 +41,6 @@ public class BasicCalculator{
 		float firstNumber = sc.nextFloat();
 		System.out.println("Enter the second number: ");
 		float secondNumber = sc.nextFloat();
-		System.out.println("---READ THIS---");
 		System.out.println("Press 1 for addition");
 		System.out.println("Press 2 for subtraction");
 		System.out.println("Press 3 for multiplication");
