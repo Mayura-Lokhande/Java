@@ -1,14 +1,25 @@
 import java.util.Scanner;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        
-        int n = sc.nextInt();
-        for(int i=1; i<=n; i++){
-            for (int j=1; j<=n-i+1; j++){
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int currentRow = 1; currentRow <= rows; currentRow++) {
+
+            int stars = rows - currentRow + 1;
+
+            for (int count = 1; count <= stars; count++) {
                 System.out.print("* ");
             }
+
             System.out.println();
         }
+
+        scanner.close();
     }
-} 
+}
