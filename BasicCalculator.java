@@ -22,7 +22,7 @@ class MathEquivalenceValidator {
     }
     
     /**
-     * Evaluates mathematical equivalence between two integer values.
+     
      * 
      * @param value1 First integer value
      * @param value2 Second integer value
@@ -47,7 +47,7 @@ public class BasicCalculator{
 		System.out.println("Press 3 for multiplication");
 		System.out.println("Press 4 for divide");
 		int result = sc.nextInt();
-		// Using MathEquivalenceValidator for operation selection validation
+	
 if (result == 1){
 			System.out.println(firstNumber + secondNumber);
 		}
