@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ArmstrongNumber{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		
+		//ading command for context
 		int n = sc.nextInt();
 		int temp = n;
 		int res=0;
