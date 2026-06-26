@@ -1,26 +1,51 @@
 package sorting_algo;
 
+import java.util.Scanner;
+
 public class InsertionSort {
 
-	public static void main(String[] args) {
-		
-		int arr[] = insertionSort(new int[] {34,6,78,34,87,98,56,98,5,8,9,1,0,-76,-54,-65,999});
-		for(int i=0; i<arr.length; i++) {
-			System.out.print(arr[i]+" ");
-		}
+    public static void main(String[] args) {
 
-	}
-	public static int[] insertionSort(int [] a) {
-		for(int i=1; i<a.length; i++) {
-			int element = a[i];
-			int j = i-1;
-			while(j>=0 && a[j]>element) {
-				a[j+1]=a[j];
-				j--;
-			}
-			a[j+1]=element;
-		}
-		return a;
-	}
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter array size: ");
+        int size = sc.nextInt();
+
+        int[] numbers = new int[size];
+
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < size; i++) {
+            numbers[i] = sc.nextInt();
+        }
+
+        insertionSort(numbers);
+
+        System.out.println("Sorted Array:");
+        printArray(numbers);
+
+        sc.close();
+    }
+
+    public static void insertionSort(int[] arr) {
+
+        for (int i = 1; i < arr.length; i++) {
+
+            int current = arr[i];
+            int position = i - 1;
+
+            while (position >= 0 && arr[position] > current) {
+                arr[position + 1] = arr[position];
+                position--;
+            }
+
+            arr[position + 1] = current;
+        }
+    }
+
+    public static void printArray(int[] arr) {
+
+        for (int value : arr) {
+            System.out.print(value + " ");
+        }
+    }
 }
