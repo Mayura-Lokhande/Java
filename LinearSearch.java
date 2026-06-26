@@ -12,7 +12,8 @@ public class LinearSearch {
         System.out.println("Array elements: " + Arrays.toString(array));
 
         System.out.print("Enter value to search: ");
-        int value = sc.nextInt();
+        if (sc.hasNextInt()) {
+            int value = sc.nextInt();
 
         int index = -1;
 
