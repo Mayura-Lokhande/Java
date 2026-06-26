@@ -5,6 +5,7 @@ public class Anagram_method_2{
         
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
+        String s2 = sc.nextLine();
         
         char chars1[] = s1.toCharArray();
         java.util.Arrays.sort(chars1);
