@@ -1,10 +1,9 @@
 package string;
 import java.util.Scanner;
 public class Anagram {
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+		//make some changes here 
 		String a = sc.nextLine();
 		String b = sc.nextLine();
 		boolean isAnagram = false;
