@@ -8,7 +8,7 @@ public class add_2_matrix{
         int cols = sc.nextInt();
         int a[][] = new int[rows][cols];
         int b[][] = new int[rows][cols];
-
+//making changes
         System.out.println("enter array 1:");
         for(int i=0; i<rows; i++){
             for(int j=0; j<cols; j++){
