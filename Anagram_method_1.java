@@ -3,7 +3,7 @@ package string;
 public class Anagram_method_1 {
 
 	public static void main(String[] args) {
-		
+		String a = "aba";
 		String a = "aba";
 		String b = "abb";
 		
