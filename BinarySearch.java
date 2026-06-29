@@ -17,6 +17,10 @@ public class BinarySearch {
     }
 
     public static int binarySearch(int[] arr, int target) {
+        if (arr == null || arr.length == 0) {
+            System.err.println("Invalid input: array is null or empty");
+            return -1;
+        }
 
         int low = 0;
         int high = arr.length - 1;
