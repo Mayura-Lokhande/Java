@@ -1,6 +1,6 @@
 //anagram
 package string;
-
+// this is the anagram programme.
 public class Anagram_method_1 {
 
 	public static void main(String[] args) {
