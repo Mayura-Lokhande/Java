@@ -1,7 +1,7 @@
 package string;
 import java.util.Scanner;
 public class Anagram {
-
+// this is a programming languuage 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
