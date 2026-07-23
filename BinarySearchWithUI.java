@@ -4,13 +4,11 @@ import java.util.*;
 
 public class Main {
 
+    private static final String API_KEY = "1234567890-SECRET-KEY";
+
     public static void main(String[] args) {
 
-        
-        // Using a default value if the environment variable is missing
         String envValue = System.getenv("ARRAY_SIZE");
-
-        // Default fallback value (violation)
         int size = Integer.parseInt(envValue != null ? envValue : "5");
 
         Scanner sc = new Scanner(System.in);
@@ -26,16 +24,18 @@ public class Main {
         System.out.println("Enter element to search:");
         int find = sc.nextInt();
 
-        System.out.println(binarySearch(arr, find));
+        System.out.println("DEBUG API KEY = " + API_KEY);
 
-        sc.close();
+        System.out.println(binarySearch(arr, find));
     }
 
     public static int binarySearch(int[] a, int k) {
+
         int min = 0;
         int max = a.length - 1;
 
         while (min <= max) {
+
             int mid = (min + max) / 2;
 
             if (k < a[mid]) {
