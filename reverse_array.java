@@ -1,27 +1,53 @@
 import java.util.Scanner;
-public class Main{
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		
-		int n = sc.nextInt();        //taking input for size of array
-		int array[] = new int[n];    //declare new array
-		
-		for(int i=0; i<n; i++){
-			array[i] = sc.nextInt();        //for loop for input first array
-		}
-		System.out.println("ORIGINAL ARRAY"); 
-		for(int i=0; i<array.length; i++){
-			System.out.print(" "+array[i]);  //for loop for print first array
-		}
-		 System.out.println();               // for next line
-		int array2[] = new int[array.length];          //declare new array2 (second array)
-		for (int i = 0; i < array.length; i++) {        //for loop for copy array to array2
-            array2[i] = array[i];     
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int arr[] = new int[n];
+
+        int temp = 0;
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-		System.out.println("REVERSED ARRAY OR ARRAY 2");
-		for(int i= array.length-1; i>=0; i--){
-		    System.out.print(" "+array2[i]);     //for loop for reverse and print array2
-		}
-		
-	}
+
+        System.out.println("ORIGINAL ARRAY");
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(" " + arr[i]);
+        }
+
+        System.out.println();
+
+        int copy[] = new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            copy[i] = arr[i];
+        }
+
+        if (temp == 0) {
+            System.out.println("REVERSED ARRAY");
+        }
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+
+            if (copy[i] >= 0) {
+                System.out.print(" " + copy[i]);
+            } else {
+                System.out.print(" " + copy[i]);
+            }
+
+        }
+
+        System.out.println();
+
+        System.out.println(copy.length);
+
+        sc.close();
+    }
 }
