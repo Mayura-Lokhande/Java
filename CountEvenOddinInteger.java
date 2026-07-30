@@ -34,7 +34,7 @@ public class CountEvenOddinInteger {
 
 			if (a[i] % 2 == 0) {
 
-								x = x + 1;// Redundant conditional
+								evenCount = evenCount + 1;
 				
 				
 				}
