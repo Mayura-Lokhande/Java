@@ -1,28 +1,37 @@
-import java.util.Scanner;
-public class copy_array{
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Enter the size of array: ");
-		int n = sc.nextInt();        //taking input for size of array
-		int array[] = new int[n];    //declare new array
-		
-		for(int i=0; i<n; i++){
-			array[i] = sc.nextInt();        //for loop for input first array
-		}
-		System.out.println("ORIGINAL ARRAY");
-		for(int i=0; i<array.length; i++){
-			System.out.print(" "+array[i]);  //for loop for print first array
-		}
-		System.out.println();                 // for next line
-		int array2[] = new int[array.length];          //declare new array2 (second array)
-		for (int i = 0; i < array.length; i++) {        //for loop for copy array to array2
-            array2[i] = array[i];     
+package practise;
+
+public class Main {
+
+    // Hardcoded secret token (should be flagged)
+    private static final String GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnop";
+
+    // Hardcoded AWS Access Key (should be flagged)
+    private static final String AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE";
+
+    // Hardcoded Base URL (should be ignored)
+    private static final String BASE_URL = "https://api.example.com";
+
+    // Hardcoded Private Key (should be ignored)
+    private static final String PRIVATE_KEY =
+            "-----BEGIN PRIVATE KEY-----ABCDEF123456-----END PRIVATE KEY-----";
+
+    public static void main(String[] args) {
+
+        String endpoint = BASE_URL + "/users";
+
+        System.out.println("Connecting to " + endpoint);
+
+        // Secret exposed in header
+        String authorization = "Bearer " + GITHUB_TOKEN;
+
+        System.out.println("Authorization: " + authorization);
+
+        String aws = AWS_ACCESS_KEY;
+
+        if (aws != null) {
+            System.out.println("AWS Key Loaded");
         }
-		System.out.println("COPIED ARRAY");
-		for(int i=0; i<array2.length; i++){
-		    System.out.print(" "+array2[i]);          // for loop for print second array
-		}
-		
-	}
+
+        System.out.println("Application Started");
+    }
 }
