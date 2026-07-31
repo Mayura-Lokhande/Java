@@ -10,12 +10,14 @@ public class Main {
 
         String envValue = System.getenv("ARRAY_SIZE");
         int size;
+        
+        int size;
         try {
             size = Integer.parseInt(envValue);
         } catch (NumberFormatException e) {
             size = 5; // Default value
+            System.out.println("An unexpected error occurred while setting up the application. Using default configuration.");
         }
-
         Scanner sc = new Scanner(System.in);
 
         int[] arr = new int[size];
