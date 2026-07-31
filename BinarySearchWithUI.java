@@ -4,12 +4,17 @@ import java.util.*;
 
 public class Main {
 
-    private static final String API_KEY = "1234567890-SECRET-KEY";
+    private static final String API_KEY = System.getenv("API_KEY");
 
     public static void main(String[] args) {
 
         String envValue = System.getenv("ARRAY_SIZE");
-        int size = Integer.parseInt(envValue != null ? envValue : "5");
+        int size;
+        try {
+            size = Integer.parseInt(envValue);
+        } catch (NumberFormatException e) {
+            size = 5; // Default value
+        }
 
         Scanner sc = new Scanner(System.in);
 

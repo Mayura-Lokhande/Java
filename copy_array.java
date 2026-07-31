@@ -3,10 +3,9 @@ package practise;
 public class Main {
 
     // Hardcoded secret token (should be flagged)
-    private static final String GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnop";
-
+  
     // Hardcoded AWS Access Key (should be flagged)
-    private static final String AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE";
+    private static final String API_KEY = System.getenv("API_KEY");
 
     // Hardcoded Base URL (should be ignored)
     private static final String BASE_URL = "https://api.example.com";
