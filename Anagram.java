@@ -24,6 +24,9 @@ public class Anagram {
     }
 
     public static boolean checkAnagram(String str1, String str2) {
+        if (str1 == null || str2 == null || str1.trim().isEmpty() || str2.trim().isEmpty()) {
+            return false;
+        }
 
         if (str1.length() != str2.length()) {
             return false;
