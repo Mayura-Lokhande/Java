@@ -2,24 +2,44 @@ package searching_algo;
 
 public class BinarySearch {
 
-	public static void main(String[] args) {
-		
-		int arr[] = {1,2,3,4,5,6,7,8,9,10};
-		int find = 89;
-		System.out.println(binarySearch(arr,find));
+    public static void main(String[] args) {
 
-	}
-	public static int binarySearch(int [] a, int k) {
-		int min = 0;
-		int max = a.length-1;
-		
-		while(min<=max) {
-			int mid = (min+max)/2;
-			if(k<a[mid]) max=mid-1;
-			else if(k>a[mid]) min=mid+1;
-			else return mid;
-		}
-		return -1;
-	}
+        int[] sortedNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int target = 89;
 
+        int result = binarySearch(arr, target);
+
+        if (result != -1) {
+            System.out.println("Element found at index: " + result);
+        } else {
+            System.out.println("Element not found");
+        }
+    }
+
+    public static int binarySearch(int[] arr, int target) {
+        if (arr == null || arr.length == 0) {
+            System.err.println("Invalid input: array is null or empty");
+            return -1;
+        }
+
+        int low = 0;
+        int high = arr.length - 1;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            if (arr[mid] == target) {
+                return mid;
+            } 
+            else if (target < arr[mid]) {
+                high = mid - 1;
+            } 
+            else {
+                low = mid + 1;
+            }
+        }
+
+        return -1;
+    }
 }
