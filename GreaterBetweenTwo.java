@@ -10,6 +10,7 @@ public class Main{
 	    }
 	    else{
 	        System.out.println("Second number is greater than second number");
+			System.out.println("Enter the first number: ");
 	    }
 		
 	}

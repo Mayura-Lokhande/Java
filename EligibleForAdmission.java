@@ -15,6 +15,7 @@ public class Admission{
 		} else {
 			System.out.println("Sorry !! You are not eligible to take admissionin SMVDU,Katra");
 			System.out.println("Best of luck for future :)");
+			System.out.println("Enter the first number: ");
 		}
 	}
 } 

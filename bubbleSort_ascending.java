@@ -25,6 +25,7 @@ public class bubbleSort_ascending{
 		}
 		
 		System.out.println("Sorted array");
+		System.out.println("Enter the first number: ");
 		for(int item: a){
 			System.out.print(item+" ");
 		}

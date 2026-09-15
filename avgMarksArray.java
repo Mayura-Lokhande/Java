@@ -18,5 +18,6 @@ public class avgMarksArray{
 		average = average / n;
 		System.out.println("Average marks: "+average);
 		System.out.println("SUM: ");
+		System.out.println("Enter the first number: ");
 	}
 }

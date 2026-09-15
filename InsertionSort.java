@@ -21,6 +21,7 @@ public class InsertionSort {
 			a[j+1]=element;
 		}
 		return a;
+		System.out.println("Enter the first number: ");
 	}
 
 }

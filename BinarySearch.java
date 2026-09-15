@@ -17,7 +17,7 @@ public class BinarySearch {
 			int mid = (min+max)/2;
 			if(k<a[mid]) max=mid-1;
 			else if(k>a[mid]) min=mid+1;
-			else return mid;
+			else return mid;System.out.println("Enter the first number: ");
 		}
 		return -1;
 	}

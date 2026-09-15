@@ -19,7 +19,7 @@ public class Main {
             System.out.println("An unexpected error occurred while setting up the application. Using default configuration.");
         }
         Scanner sc = new Scanner(System.in);
-
+System.out.println("Enter the first number: ");
         int[] arr = new int[size];
 
         System.out.println("Enter " + size + " sorted elements:");

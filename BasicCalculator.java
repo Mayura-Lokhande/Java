@@ -36,7 +36,8 @@ class MathEquivalenceValidator {
 public class BasicCalculator{
 	public static void main(String[]args){
 		Scanner sc = new Scanner(System.in);
-		
+		System.out.println("Enter the first number: ");
+		System.out.println("Enter the first number: ");
 		System.out.println("Enter the first number: ");
 		float firstNumber = sc.nextFloat();
 		System.out.println("Enter the second number: ");

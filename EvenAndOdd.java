@@ -11,6 +11,7 @@ public class EvenAndOdd{
 		} 
 		else {
 			System.out.println("Number is odd");
+			System.out.println("Enter the first number: ");
 		}
 	}
 } 

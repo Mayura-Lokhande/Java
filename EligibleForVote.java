@@ -9,6 +9,7 @@ public class EligibleForVote{
 			System.out.println("This candidate is eligible for voting :)");
 		} else {
 			System.out.println("Sorry this candidate is not eligible for voting");
+			System.out.println("Enter the first number: ");
 		}
 	}
 }

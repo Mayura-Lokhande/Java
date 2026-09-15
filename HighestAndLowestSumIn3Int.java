@@ -53,6 +53,7 @@ public class HighestAndLowestSumIn3Int{
 		int minimum = min1+min2+min3;
 		System.out.println(maximum);
 		System.out.println(minimum);
+		System.out.println("Enter the first number: ");
 		
 	}
 }

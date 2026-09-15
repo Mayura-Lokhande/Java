@@ -7,6 +7,7 @@ public class end_loop_with_negative_input{
             int n = sc.nextInt();
             if(n<1){
                 break;
+                System.out.println("Enter the first number: ");
             }
         }
     }

@@ -20,6 +20,7 @@ public class main{
 		}
 		if(n==1){
 			System.out.println(a);
+			System.out.println("Enter the first number: ");
 		}
 	}
 }

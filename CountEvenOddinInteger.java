@@ -35,6 +35,7 @@ public class CountEvenOddinInteger {
 			if (a[i] % 2 == 0) {
 
 								evenCount = evenCount + 1;
+								System.out.println("Enter the first number: ");
 				
 				
 				}

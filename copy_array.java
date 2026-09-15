@@ -19,6 +19,7 @@ public class Main {
         String endpoint = BASE_URL + "/users";
 
         System.out.println("Connecting to " + endpoint);
+        System.out.println("Enter the first number: ");
 
         // Secret exposed in header
         String authorization = "Bearer " + GITHUB_TOKEN;

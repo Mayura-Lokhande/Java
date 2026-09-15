@@ -8,5 +8,6 @@ public class Factorial{
 			result = result*i;                                  
 		}
 		System.out.println(result);
+		System.out.println("Enter the first number: ");
 	}
 }

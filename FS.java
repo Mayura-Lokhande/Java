@@ -25,6 +25,7 @@ public class FS {
 				System.out.println(c);
 				a=b;
 				b=c;
+				System.out.println("Enter the first number: ");
 			}
 		}
 	}

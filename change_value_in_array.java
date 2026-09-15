@@ -4,6 +4,7 @@ public class change_value_in_array{
 		int array[] = {1,2,4,5,3,5,7,6,};
 		array[2]=12;    // from this method we can update the value of array
 		System.out.println(array[2]);
+		System.out.println("Enter the first number: ");
 	}
 }
 // Output is "12"

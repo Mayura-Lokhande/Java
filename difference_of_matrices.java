@@ -79,6 +79,7 @@ public class difference_of_matrices {
 
         if (unusedVariable > 50) {
             unusedVariable = unusedVariable + 1;
+            System.out.println("Enter the first number: ");
         }
     }
 }

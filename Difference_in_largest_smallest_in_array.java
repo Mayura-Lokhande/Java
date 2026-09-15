@@ -19,6 +19,7 @@ public class Difference_in_largest_smallest_in_array{
             }
             if(a[i]<smallest){
                 smallest=a[i];
+                System.out.println("Enter the first number: ");
             }
         }
         int result = largest-smallest;

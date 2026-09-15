@@ -20,5 +20,6 @@ public class countVowels {
 			}
 		}
 		System.out.println(count);
+		System.out.println("Enter the first number: ");
 	}
 }

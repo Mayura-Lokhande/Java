@@ -21,6 +21,7 @@ public class copy_2Darray{
                 System.out.print(arr1[i][j]+" ");
             }
             System.out.println();
+            System.out.println("Enter the first number: ");
         }
         int arr2[][] = new int[rows][cols];
         for(int i=0; i<rows; i++){

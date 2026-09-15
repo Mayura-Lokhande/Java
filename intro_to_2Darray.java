@@ -19,6 +19,7 @@ public class intro_to_2Darray{
                 System.out.print(array[i][j]+" ");
             }
             System.out.println();
+            System.out.println("Enter the first number: ");
         }
     }
 }

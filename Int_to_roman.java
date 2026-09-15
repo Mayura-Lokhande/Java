@@ -72,5 +72,6 @@ class int_to_roman {
         }
 
         return roman.toString();
+        System.out.println("Enter the first number: ");
     }
 } 

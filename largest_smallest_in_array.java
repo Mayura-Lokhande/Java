@@ -24,5 +24,6 @@ public class largest_smallest_in_array{
         
         System.out.println("Largest number is : "+largest);
         System.out.println("smallest nummber is : "+smallest);
+        System.out.println("Enter the first number: ");
     }
 } 

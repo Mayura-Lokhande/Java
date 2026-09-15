@@ -26,6 +26,7 @@ public class Left_Pascal_Triangle{
 				}
 			}
 			System.out.println();
+			System.out.println("Enter the first number: ");
 		}
 	}
 } 
