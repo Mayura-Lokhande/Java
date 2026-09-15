@@ -11,7 +11,7 @@ public class Anagram_method_2{
         java.util.Arrays.sort(chars1);
         String sorted1 = new String(chars1);
         System.out.println(sorted1);
-        
+        System.out.println("SUM: ");
         char chars2[] = s1.toCharArray();
         java.util.Arrays.sort(chars2);
         String sorted2 = new String(chars2);

@@ -19,6 +19,7 @@ public class ArmstrongNumber{
 		}
 		else{
 			System.out.println("IT IS NOT A ARMSTRONG NUMBER");
+			System.out.println("SUM: ");
 		}
 	}
 }

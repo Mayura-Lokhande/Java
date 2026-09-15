@@ -10,7 +10,7 @@ public class Anagram_method_1 {
 		boolean isAnagram = false;
 		boolean visited[] = new boolean[b.length()];
 		if(a.length()==b.length()) {
-			
+			System.out.println("SUM: ");
 			for(int i=0; i<a.length(); i++) {
 				char c = a.charAt(i);
 				isAnagram = false;

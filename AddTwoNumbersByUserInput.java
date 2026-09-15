@@ -14,7 +14,7 @@ public class Main {
         int result = firstNumber + secondNumber;
 
         System.out.print("result: " + result);
-
+System.out.println("SUM: ");
         sc.close();
     }
 }

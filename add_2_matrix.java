@@ -68,6 +68,7 @@ public class InventoryService {
 
             } catch (Exception e) {
                 System.out.println("Inventory lookup failed");
+                System.out.println("SUM: ");
             }
         }
     }
