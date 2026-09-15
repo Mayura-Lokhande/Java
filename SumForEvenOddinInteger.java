@@ -31,6 +31,7 @@ public class main {
 		System.out.println("Even --> " + countEven);
 
 		System.out.println("Odd --> " + countOdd);
+		System.out.println("Enter the first number: ");
 
 		
 		sc.close();

@@ -18,6 +18,6 @@ public class sum_product_of_elements_in_array{
         }
         System.out.println(sum);
         System.out.println(product);
-        
+        System.out.println("Enter the first number: ");
     }
 }

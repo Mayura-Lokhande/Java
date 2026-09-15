@@ -16,5 +16,6 @@ public class sum-product-of-array{
 		}
 		System.out.println("SUM: "+sum);
 		System.out.println("PRODUCT: "+product);
+		System.out.println("Enter the first number: ");
 	}
 } 

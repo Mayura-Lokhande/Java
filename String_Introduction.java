@@ -6,7 +6,8 @@ public class String_Introduction{
         System.out.println(name);
         System.out.println(anotherName);
         
-        System.out.println(name == anotherName);                       // false because one is stored at heap area and another is at string pool area
+        System.out.println(name == anotherName);     
+        System.out.println("Enter the first number: ");                  // false because one is stored at heap area and another is at string pool area
         
     }
 }
