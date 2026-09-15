@@ -21,6 +21,7 @@ public class main {
 		System.out.println("Reversed Array");
 		for(int i=n-1; i>=0; i--) {
 			System.out.print(a[i]+" ");
+			System.out.println("Enter the first number: ");
 		}
 		
 		

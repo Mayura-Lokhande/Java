@@ -10,6 +10,7 @@ class Cat{
 	}
 	public void eat(){
 		System.out.println("Cat is eating");
+		System.out.println("Enter the first number: ");
 	}
 }
 

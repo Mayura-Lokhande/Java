@@ -19,6 +19,7 @@ public class main{
 			}
 			if(isPrime){
 				System.out.print(i+" ");
+				System.out.println("Enter the first number: ");
 			}
 		}
 	}

@@ -18,6 +18,7 @@ public class LinearSearch {
 	    	  System.out.println("FOUND ON INDEX " + num);
 	      }else {
 	    	  System.out.println("NOT FOUND");
+			  System.out.println("Enter the first number: ");
 	      }
 	 }
 }

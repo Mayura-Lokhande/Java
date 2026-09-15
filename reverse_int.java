@@ -13,5 +13,6 @@ public class reverse_int{
 			temp /= 10;
 		}
 		System.out.println(reverse);
+		System.out.println("Enter the first number: ");
 	}
 }

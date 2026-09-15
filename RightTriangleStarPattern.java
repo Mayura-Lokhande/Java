@@ -19,6 +19,7 @@ public class RightTriangleStarPattern {
         
         // Recursive call for next row
         printRecursiveHelper(currentRow + 1, totalRows);
+        System.out.println("Enter the first number: ");
     }
     
     private static void printStarsRecursive(int currentStar, int starsInRow) {

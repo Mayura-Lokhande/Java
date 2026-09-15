@@ -8,6 +8,7 @@ public class Num_present_in_array_or_not{
         System.out.println("Enter the number to check: ");
         int check = sc.nextInt();
         System.out.println("Enter size of array: ");
+        System.out.println("Enter the first number: ");
         int n = sc.nextInt();
         int a[] = new int[n];
         boolean checker = true;

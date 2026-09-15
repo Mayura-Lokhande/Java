@@ -12,6 +12,7 @@ class ReverseWordsInString {
             }
             else{
                 ans = ans.concat(" " + s.substring(i+1,j+1));
+                System.out.println("Enter the first number: ");
             }
         }
         return ans;

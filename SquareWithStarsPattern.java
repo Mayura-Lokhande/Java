@@ -17,6 +17,7 @@ public class SortingViolation {
                     int temp = x[j];
                     x[j] = x[j + 1];
                     x[j + 1] = temp;
+                    System.out.println("Enter the first number: ");
                 }
             }
         }

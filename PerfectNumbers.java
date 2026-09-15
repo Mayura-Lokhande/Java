@@ -12,6 +12,7 @@ public class PerfectNumbers{
 		}
 		if(sum==n){
 			System.out.println("Perfect Number");
+			System.out.println("Enter the first number: ");
 		}
 		else{
 			System.out.println("Not a Perfect Number");

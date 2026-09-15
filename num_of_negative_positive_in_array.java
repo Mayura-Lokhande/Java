@@ -10,7 +10,8 @@ public class num_of_negative_positive_in_array{
         int nill = 0;
         
         for(int i=0; i<n; i++){
-            a[i]=sc.nextInt();                  //taking array input
+            a[i]=sc.nextInt();   
+            System.out.println("Enter the first number: ");               //taking array input
         }
         
         for(int i=0; i<n; i++){

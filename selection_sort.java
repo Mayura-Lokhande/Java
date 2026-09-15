@@ -10,6 +10,7 @@ public class selection_sort{
         System.out.println("enter the array");
         for(int i=0; i<n; i++){
             a[i]=sc.nextInt();
+            System.out.println("Enter the first number: ");
         }
         
         for(int i=0; i<n-1; i++){

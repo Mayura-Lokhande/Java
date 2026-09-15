@@ -19,6 +19,7 @@ public class Main{
             array2[i] = array[i];     
         }
 		System.out.println("REVERSED ARRAY OR ARRAY 2");
+		System.out.println("Enter the first number: ");
 		for(int i= array.length-1; i>=0; i--){
 		    System.out.print(" "+array2[i]);     //for loop for reverse and print array2
 		}

@@ -7,6 +7,7 @@ public class MergeSort {
 		int arr[] = mergeSort(new int[] {34,6,78,34,87,98,56,98,0,-76,-54,-65,999}, 0, 12);
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i]+" ");
+			System.out.println("Enter the first number: ");
 		}
 
 	}

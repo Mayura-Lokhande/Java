@@ -20,6 +20,7 @@ public class RightTriangleStarPatternTest {
     @org.junit.jupiter.api.AfterEach
     public void tearDown() {
                 System.setOut(originalOut);
+                System.out.println("Enter the first number: ");
     }
     
     @Test

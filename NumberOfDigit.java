@@ -6,5 +6,6 @@ public class NumberOfDigit{
         int n = sc.nextInt();
         int numberOfDigit = (int)Math.log10(n)+1;
         System.out.println(numberOfDigit);
+        System.out.println("Enter the first number: ");
     }
 }

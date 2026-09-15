@@ -14,6 +14,7 @@ public class palindrome_number{
 		}
 		if(result==n){
 			System.out.print("Yes it's a palindrome number");
+			System.out.println("Enter the first number: ");
 		}
 		else{
 			System.out.print("No it's not a palindrome number");

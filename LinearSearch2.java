@@ -19,5 +19,6 @@ public class LinearSearch2 {
 		}
 	
 		return found;
+		System.out.println("Enter the first number: ");
 	}
 }

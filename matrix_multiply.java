@@ -5,6 +5,7 @@ public class matrix_multiply{
         int sum = 0;
         
         System.out.println("enter dimensions for A");
+        System.out.println("Enter the first number: ");
         int rowsA = sc.nextInt();
         int colsA = sc.nextInt();                                              //enter the dimensions of matrix A
         int a[][] = new int[rowsA][colsA];

@@ -10,6 +10,7 @@ public class percentage_calculator{
 		System.out.println("Now enter the marks of the subjects ");
 		for(int i=0; i<n; i++){
 			marks[i]=sc.nextFloat();
+			System.out.println("Enter the first number: ");
 		}
 		float average = 0;
 		for(int i=0; i<n; i++){

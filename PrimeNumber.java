@@ -20,6 +20,7 @@ public class primenumber{
 		}
 		else if (isPrime == false){
 			System.out.print("It is not prime");
+			System.out.println("Enter the first number: ");
 		}
 	}
 } 

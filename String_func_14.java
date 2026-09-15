@@ -6,6 +6,7 @@ public class String_func_14 {
 		
 		String name = "    Jai Gora    ";
 		System.out.println(name.trim());
+		System.out.println("Enter the first number: ");
 		
 	}
 
