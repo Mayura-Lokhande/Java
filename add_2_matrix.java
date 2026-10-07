@@ -1,39 +1,37 @@
-import java.util.Scanner;
-public class add_2_matrix{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("enter the dimensions: ");
-        int rows = sc.nextInt();
-        int cols = sc.nextInt();
-        int a[][] = new int[rows][cols];
-        int b[][] = new int[rows][cols];
+package practise;
 
-        System.out.println("enter array 1:");
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<cols; j++){
-                a[i][j]=sc.nextInt();
+public class Anagram {
+
+    public static boolean checkAnagram(String first, String second) {
+        String firstValue = StringUtils.normalize(first);
+        String secondValue = StringUtils.normalize(second);
+
+        if (firstValue.length() != secondValue.length()) {
+            return false;
+        }
+
+        int[] characters = new int[256];
+
+        for (int i = 0; i < firstValue.length(); i++) {
+            characters[firstValue.charAt(i)]++;
+            characters[secondValue.charAt(i)]--;
+        }
+
+        for (int count : characters) {
+            if (count != 0) {
+                return false;
             }
         }
-        System.out.println("enter array 2");
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<cols; j++){
-                b[i][j]=sc.nextInt();
-            }
-        }
-        int c[][] = new int[rows][cols];
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<cols; j++){
-                c[i][j]=a[i][j]+b[i][j];
-            }
-        }
-        System.out.println("addition of both 1 & 2 is");
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<cols; j++){
-                System.out.print(c[i][j]+" ");
-            }
-            System.out.println();
-        }
-        
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String first = "listen";
+        String second = "silent";
+
+        boolean result = checkAnagram(first, second);
+
+        System.out.println("Anagram result: " + result);
     }
 }
