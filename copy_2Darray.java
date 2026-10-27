@@ -3,7 +3,7 @@ package practise;
 public class Main {
 
 
-    private static final String GITHUB_TOKEN = System.getenv("GITHUB_TOKEN");
+    private static final String GITHUB_TOKEN = java.util.Objects.requireNonNull(System.getenv("GITHUB_TOKEN"), "GITHUB_TOKEN must be set");
 
 
     private static final String AWS_ACCESS_KEY = System.getenv("AWS_ACCESS_KEY");
