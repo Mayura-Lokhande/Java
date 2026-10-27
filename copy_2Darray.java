@@ -3,17 +3,16 @@ package practise;
 public class Main {
 
 
-    private static final String GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnop";
+    private static final String GITHUB_TOKEN = System.getenv("GITHUB_TOKEN");
 
 
-    private static final String AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE";
+    private static final String AWS_ACCESS_KEY = System.getenv("AWS_ACCESS_KEY");
 
    
     private static final String BASE_URL = "https://api.example.com";
 
   
-    private static final String PRIVATE_KEY =
-            "-----BEGIN PRIVATE KEY-----ABCDEF123456-----END PRIVATE KEY-----";
+    private static final String PRIVATE_KEY = System.getenv("PRIVATE_KEY");
 
     public static void main(String[] args) {
 
@@ -24,7 +23,7 @@ public class Main {
      
         String authorization = "Bearer " + GITHUB_TOKEN;
 
-        System.out.println("Authorization: " + authorization);
+        System.out.println("Authorization configured");
 
         String aws = AWS_ACCESS_KEY;
 
